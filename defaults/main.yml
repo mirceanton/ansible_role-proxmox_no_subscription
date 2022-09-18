@@ -1,4 +1,7 @@
 ---
-disable_nag: true
-upgrade: true
-reboot: true
+# The path at which the enterprise repo is configured
+proxmox_nosub_enterprise_repo_path: /etc/apt/sources.list.d/pve-enterprise.list
+
+# The path at which the no subscription repo is configured
+proxmox_nosub_nosub_repo_path: /etc/apt/sources.list.d/pve-nosub.list
+proxmox_nosub_nosub_repo_line: deb http://download.proxmox.com/debian/pve {{ ansible_distribution_release }} pve-no-subscription
