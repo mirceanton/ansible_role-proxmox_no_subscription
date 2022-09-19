@@ -1,0 +1,7 @@
+---
+- name: Update
+  ansible.builtin.apt:
+    upgrade: dist
+
+- name: Reboot
+  ansible.builtin.reboot:

@@ -1,4 +1,5 @@
 ---
-disable_nag: true
-upgrade: true
-reboot: true
+proxmox_nosub_disable_nag: true
+proxmox_nosub_disable_enterprise_repo: true
+proxmox_nosub_enable_nosub_repo: true
+proxmox_nosub_enable_test_repo: true
