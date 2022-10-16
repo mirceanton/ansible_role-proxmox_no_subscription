@@ -1,11 +1,9 @@
 galaxy_info:
-  role_name: proxmox_nosub
-
   author: Mircea-Pavel ANTON
+  namespace: mirceanton
+  role_name: proxmox_no_subscription
   description: An Ansible Role that automatically configures a Proxmox VE server that is running with no subscription.
   company: mirceanton
-
-  issue_tracker_url: https://github.com/Amir-Homelab/ansible-role_proxmox-nested-virt/issues
 
   license: license (MIT)
   standalone: true
@@ -20,6 +18,5 @@ galaxy_info:
 
   galaxy_tags:
     - proxmox
-    - virtualization
 
 dependencies: []

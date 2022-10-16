@@ -25,11 +25,12 @@ Example Playbook
 
 ``` yml
 ---
-- hosts: all
+- name: Set up repositories on all PVE hosts
+  hosts: pve
   remote_user: root
 
   roles:
-    - role: mirceanton.proxmox_nosub
+    - role: mirceanton.proxmox_no_subscription
 ```
 
 MIT
