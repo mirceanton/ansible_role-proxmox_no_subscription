@@ -1,7 +1,7 @@
 galaxy_info:
-  role_name: proxmox_nosub
-
   author: Mircea-Pavel ANTON
+  namespace: mirceanton
+  role_name: proxmox_nosub
   description: An Ansible Role that automatically configures a Proxmox VE server that is running with no subscription.
   company: mirceanton
 
