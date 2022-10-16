@@ -1,7 +1,7 @@
 Proxmox: No Subscription
 ========================
 
-An Ansible Role that automatically configures a Proxmox VE server that is running with no subscription.
+An Ansible Role that automatically configures the apt repos for a Proxmox VE server that is running with no subscription.
 
 Requirements
 ------------
@@ -11,11 +11,9 @@ N/A.
 Role Variables
 --------------
 
-|   Variable    | Default |                      Description                      |
-| :-----------: | :-----: | :---------------------------------------------------: |
-| `disable_nag` | `true`  | whether or not to disable the "no subscription" popup |
-|   `upgrade`   | `true`  |      whether or not to run an `apt dist-upgrade`      |
-|   `reboot`    | `true`  |    whether or not to reboot at the end of the role    |
+N/A.
+
+For more details about the **default** variables, take a look at the [defaults/main.yml](defaults/main.yml).
 
 Dependencies
 ------------
