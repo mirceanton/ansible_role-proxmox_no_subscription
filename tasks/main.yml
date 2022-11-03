@@ -1,15 +1,15 @@
 ---
 - name: Disable Enterprise Repo
   ansible.builtin.replace:
-    path: "{{ proxmox_nosub_enterprise_repo_path }}"
+    path: "{{ proxmox_no_subscription_enterprise_repo_path }}"
     regexp: '^deb(\s+.*)?'
     replace: '# deb\1'
-  notify: Update
+  notify: Upgrade
 
 - name: Enable No-Subscription Repo
   ansible.builtin.lineinfile:
-    path: "{{ proxmox_nosub_nosub_repo_path }}"
-    line: "{{ proxmox_nosub_nosub_repo_line }}"
+    path: "{{ proxmox_no_subscription_nosub_repo_path }}"
+    line: "{{ proxmox_no_subscription_nosub_repo_line }}"
     create: true
-    mode: u=rw,g=r,o=r
-  notify: Update
+    mode: "{{ proxmox_no_subscription_nosub_repo_mode }}"
+  notify: Upgrade
