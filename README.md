@@ -33,6 +33,9 @@ Example Playbook
     - role: mirceanton.proxmox_no_subscription
 ```
 
+License
+-------
+
 MIT
 
 Author Information
